@@ -36,7 +36,7 @@ export const counterSlice = createSlice({
     },
   },
   extraReducers: builder => {
-    builder.addCase(fetchData.pending, (state, action) => {
+    builder.addCase(fetchData.pending, state => {
       state.loading = true;
     });
     builder.addCase(fetchData.fulfilled, (state, action) => {

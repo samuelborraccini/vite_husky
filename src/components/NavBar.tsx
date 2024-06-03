@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -8,7 +7,7 @@ const NavBar = () => {
         <NavLink
           to="/messages"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""
+            isPending ? 'pending' : isActive ? 'active' : ''
           }
         >
           Home
@@ -16,7 +15,7 @@ const NavBar = () => {
         <NavLink
           to="/messages"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""
+            isPending ? 'pending' : isActive ? 'active' : ''
           }
         >
           Profile
